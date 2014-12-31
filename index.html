@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Internet-marketting</title>
+
+<!-- Latest compiled and minified CSS -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<!--img src="head.jpg" alt="header image" style="width:304px;height:228px"-->
+<style>
+
+
+</style>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<div  style="position: absolute; z-index: 1; visibility: show;">
+<img src="background.jpg" alt="backgroung image" style="width:100%;height:100%">
+</div>
+
+<div  style="top:330px; left:490px; position: absolute; z-index: 1; visibility: show;">
+<img src="bgg.jpg" alt="backgroung image" style="width:350px;height:200px">
+</div>
+
+<div  style="top: 0px; left: 300px;width:1000px;height:200px; position: absolute; z-index: 1; visibility: show;"><b>
+    <div  style="top:0%;left:0%; position: absolute; z-index: 1; visibility: show;">
+        <h1 style= "color:#000000;font-size: 50px;text-align: center;" >I STARTED MY SUCCESSFUL</h1>
+    </div>
+    
+    <div  style="top: 30%; left:10%; position: absolute; z-index: 1; visibility: show;">
+        <h1 style= "color:#000000;font-size: 40px;text-align: center;" >INTERNET MARKETING</h1>
+    </div>
+    <div  style="top: 60%; left:25%;position: absolute; z-index: 1; visibility: show;">
+        <h1 style= "color:#000000;font-size: 40px;text-align: center;" ><u>WITH $0</u></h1>
+            </div>
+        </b>
+</div>
+
+<div  style="top:190px; left: 450px; position: absolute; z-index: 1; visibility: show;">
+<h3 style= "color:#FF0000;font-size: 30px;text-align: center;" >Enter Your Email Address Bellow</h3>
+</div>
+<div  style="top: 220px; left: 630px; position: absolute; z-index: 1; visibility: show;">
+<h3 style= "color:#FF0000;font-size: 30px;text-align: center;" >And</h3>
+</div>
+<div  style="top: 250px; left: 350px; position: absolute; z-index: 1; visibility: show;">
+<h3 style= "color:#FF0000;font-size: 30px;text-align: center;" >Learn How You Can do it Completely FREE... :)</h3>
+</div>
+
+<div  style="top: 480px; left: 500px; position: absolute; z-index: 1; visibility: show;">
+<h6 style= "color:#FFFFFF;" >Your mail adress is important to us and will not be misused. </h6>
+</div>
+
+<div class="container" id="wrap">
+ <div class="row">
+        <div  style="top: 350px; left: 550px; position: absolute; z-index: 1; visibility: show;">
+           
+            <form method="post" accept-charset="utf-8" class="form" role="form" id="form" target="_self" onsubmit="" action="https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse">   
+            
+                    
+                   <div class="row">
+                       
+                       
+                       <div class="col-md-40 col-md-40" style="top: 10px; left: 10px;">
+                           <input id="email" align ="center" type="text" name="email" value="" class="form-control input-lg" placeholder="Enter working Email address"  />                        
+                       </div>
+                       
+                        
+                    </div>
+                   
+                   
+                   
+                    <!-- <input id="name" type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+                   
+                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  /> -->
+                    <br />
+              
+            
+              <div class="col-md-40 col-md-40" style="top: 0px; left: 60px;">      
+            <button id="send" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">
+                        Let's Check Now</button>
+						</div>
+						 
+						
+						
+            </form>          
+          </div>
+</div>            
+</div>
+</div>
+<script type="text/javascript">
+	
+            function postToGoogle() {
+                var field1 = $('#email').val();
+                var field2 = "mark1 testing $0 marketing";
+				var x = field1
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+				alert("Not a valid e-mail address");
+				return false;
+				}
+				else{
+ 
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse",
+                    data: { "entry.1955884104": field1,"entry.1976771985": field2,},
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+							location.href = "mark1.html";
+                            //Success message
+                        },
+                        200: function() {
+						location.href = "mark1.html" ;
+                            //Success Message
+                        }
+                    }
+                });
+            }
+             }
+            $(document).ready(function(){
+                $('#form').submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+            });
+        </script>
+</body>
+
+
+
+
+
+</body>
+</html>
