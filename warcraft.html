@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Internet-marketting</title>
+
+<!-- Latest compiled and minified CSS -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<!--img src="head.jpg" alt="header image" style="width:304px;height:228px"-->
+<style>
+
+
+</style>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body bgcolor ="#AAFFBB">
+
+<div  style="top:0px; left:0px; position: absolute; z-index: 1; visibility: show;">
+<img src="hitechall.jpg" alt="backgroung image" style="width:100%;height:100%">
+</div>
+
+<div  style="top:230px; left:470px; position: absolute; z-index: 1; visibility: show;">
+<img src="optin.png" alt="box image" style="opacity: 0.5; width:350px;height:300px;">
+</div>
+
+<div  style="top: 0px; left: 250px;width:1000px;height:200px; position: absolute; z-index: 1; visibility: show;"><b>
+		
+    <div  style="top:2%;left:24%; position: absolute; z-index: 1; visibility: show;">
+        <h1 style= "color:#FFFF00;font-size: 30px;text-align: center;" >FUTURE-X-REVOLUTION</h1>
+    </div>
+    
+    <div  style="top: 35%; left:12%; position: absolute; z-index: 1; visibility: show;">
+        <h1 style= "color:#FFFFFF;font-size: 30px;text-align: center;" >GAMING REVOLUTION BEGINS HERE</h1>
+    </div>
+	
+			<div  style="top: 50%; left:0%; position: absolute; z-index: 1; visibility: show;">
+       <u> <h1 style= "color:#FF0000;background-color: #000000; font-size: 38px;text-align: center;" >WORLD of WARCRAFT TREASURE + ARMORY</h1></u>
+    </div>
+			
+			<div  style="top: 75%; left:20%;position: absolute; z-index: 1; visibility: show;">
+        <h1 style= "color:#FFFF00;font-size: 30px;text-align: center;" >BECOME WARCRAFT KING</h1>
+            </div>
+        </b>
+</div>
+
+
+
+<div  style="top:530px; left: 490px; width:300px;height:200px; position: absolute; z-index: 1; visibility: show;">
+	<div  style="top:0%; left: 0%; position: absolute; z-index: 1; visibility: show;">
+	<h3 style= "color:#FF0000;background-color: #000000;font-size: 20px;text-align: center;" >Enter Your Email Address and Unlock The Secret For You</h3>
+	</div>
+</div>
+
+<div  style="top: 490px; left: 490px; position: absolute; z-index: 1; visibility: show;">
+<h6 style= "color:#0000FF;" >Your mail adress is important to us and will not be misused. </h6>
+</div>
+
+<div class="container" id="wrap">
+ <div class="row">
+        <div  style="top: 380px; left: 530px; position: absolute; z-index: 1; visibility: show;">
+           
+            <form method="post" accept-charset="utf-8" class="form" role="form" id="form" target="_self" onsubmit="" action="https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse">   
+            
+                    
+                   <div class="row">
+                       
+                       
+                       <div class="col-md-40 col-md-40" style="top: 10px; left: 10px;">
+                           <input id="email" align ="center" type="text" name="email" value="" class="form-control input-lg" placeholder="Enter Your Email Address"  />                        
+                       </div>
+                       
+                        
+                    </div>
+                   
+                   
+                   
+                    <!-- <input id="name" type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+                   
+                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  /> -->
+                    <br />
+              
+            
+              <div class="col-md-40 col-md-40" style="top: 0px; left: 60px;">      
+            <button id="send" COLOR ="FFFF00" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">
+                        UNLOCK FUTERE</button>
+						</div>
+						 
+						
+						
+            </form>          
+          </div>
+</div>            
+</div>
+</div>
+<script type="text/javascript">
+	
+            function postToGoogle() {
+                var field1 = $('#email').val();
+                var field2 = "WARCRAFT RULE WITH GOLD";
+				var x = field1
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+				alert("Not a valid e-mail address");
+				return false;
+				}
+				else{
+ 
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse",
+                    data: { "entry.1955884104": field1,"entry.1976771985": field2,},
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+							location.href = "http://bit.ly/1BJa2bP";
+                            //Success message
+                        },
+                        200: function() {
+						location.href = "http://bit.ly/1BJa2bP" ;
+                            //Success Message
+                        }
+                    }
+                });
+            }
+             }
+            $(document).ready(function(){
+                $('#form').submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+            });
+        </script>
+		
+		<script type="text/javascript">
+adroll_adv_id = "VDRJC2OHNNG37G7XA7JQWN";
+adroll_pix_id = "AUXXWWBVUBDSHJQVZSPQQQ";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+</body>
+
+</html>
