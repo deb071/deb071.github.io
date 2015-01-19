@@ -1,0 +1,135 @@
+<body>
+<head>
+<title>Earning MONEY was Never so Easy !!</title>
+
+<!-- Latest compiled and minified CSS -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<!--img src="head.jpg" alt="header image" style="width:304px;height:228px"-->
+<style>
+
+
+</style>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body bgcolor ="#AAFFBB">
+    	
+		<div  style="top:0px; left:0px; position: absolute; z-index: 1; visibility: show;">
+			<img src="honestback.jpg" alt="backgroung image" style="width:100%; height:100%">
+		</div>
+		
+		<div  style="top:0px; left:970px; position: absolute; z-index: 1; visibility: show;">
+<img src="fb.jpg" alt="box image" style="opacity: 0.5; width:330px;height:100%;">
+</div>
+	<div  style="top:200px; left:250px; position: absolute; z-index: 1; visibility: show;">
+<img src="cntct.png" alt="box image" style="opacity: 0.5; width:550px;height:350px;">
+</div>
+		
+		
+		
+		<div  style="top: 0px; left: 300px; position: absolute; z-index: 1; visibility: show;">
+			<h2 style= "color:#DDDD00;font-size: 30px;text-align: center;" >A COMPLETE BUSINESS RECIPE</h2>
+		</div>
+		
+		<div  style="top: 250px; left: 270px; position: absolute; z-index: 1; visibility: show;">
+			<h2 style= "color:#00FFDD;font-size: 25px;width:500px;height:300%;text-align: center;" >Your next video link is generated.</h2>
+		</div>
+			
+			<div  style="top: 300px; left: 300px; position: absolute; z-index: 1; visibility: show;">
+			<h2 style= "color:#DDDDDD;font-size: 20px;text-align: center;" >Provide destination address to send the video link.</h2>
+		</div>
+		
+		<div  style="top: 450px; left: 400px; position: absolute; z-index: 1; visibility: show;">
+			<h2 style= "color:#DDDDDD;font-size: 12px;text-align: center;" >Your email address is completely secured</h2>
+		</div>
+		<div  style="top: 150px; left: 990px; position: absolute; z-index: 1; visibility: show;">
+			<h2 style= "color:#00FFDD;font-size: 35px;width:300px;height:600%;text-align: center;" ><i>If you try to fool your customers, You will get fooled in return. Learn to be true with yourself as well as with your customers.</i></h2>
+		</div>
+			
+			 
+<div class="container" id="wrap">
+ <div class="row">
+        <div  style="top: 350px; left: 400px; position: absolute; z-index: 1; visibility: show;">
+           
+            <form method="post" accept-charset="utf-8" class="form" role="form" id="form" target="_self" onsubmit="" action="https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse">   
+            
+                    
+                   <div class="row">
+                       
+                       
+                       <div class="col-md-40 col-md-40" style="top: 10px; left: 10px;">
+                           <input id="email" align ="center" type="text" name="email" value="" class="form-control input-lg" placeholder="Enter Your Email address"  />                        
+                       </div>
+                       
+                        
+                    </div>
+                   
+                   
+                   
+                    <!-- <input id="name" type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+                   
+                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  /> -->
+                    <br />
+              
+            
+              <div class="col-md-40 col-md-40" style="top: 0px; left: 60px;">      
+            <button id="send" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">
+                        SEND ME THE LINK HERE</button>
+						</div>
+						 
+						
+						
+            </form>          
+          </div>
+</div>            
+</div>	 
+<script type="text/javascript">
+	
+            function postToGoogle() {
+                var field1 = $('#email').val();
+                var field2 = "HONEST REVIEW- MARKETERS";
+				var x = field1
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+				alert("Not a valid e-mail address");
+				return false;
+				}
+				else{
+ 
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse",
+                    data: { "entry.1955884104": field1,"entry.1976771985": field2,},
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+							location.href = "honest-error.html";
+                            //Success message
+                        },
+                        200: function() {
+						location.href = "honest-error.html" ;
+                            //Success Message
+                        }
+                    }
+                });
+            }
+             }
+            $(document).ready(function(){
+                $('#form').submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+            });
+        </script> 
+</body>

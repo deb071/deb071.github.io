@@ -39,96 +39,20 @@
 			<h2 style= "color:#DDDD00;font-size: 30px;text-align: center;" >A COMPLETE BUSINESS RECIPE</h2>
 		</div>
 		
-		<div  style="top: 50px; left: 990px; position: absolute; z-index: 1; visibility: show;">
-			<h2 style= "color:#00FFDD;font-size: 30px;width:300px;height:300%;text-align: center;" >INVITATION LINK WILL BE SEND TO THIS BELLOW EMAIL ADDRESS</h2>
+		<div  style="top: 150px; left: 990px; position: absolute; z-index: 1; visibility: show;">
+			<h2 style= "color:#00FFDD;font-size: 35px;width:300px;height:600%;text-align: center;" ><i>If you try to fool your customers, You will get fooled in return. Learn to be true with yourself as well as with your customers.</i></h2>
 		</div>
 			
-			<div  style="top: 550px; left: 100px; position: absolute; z-index: 1; visibility: show;">
-			<h2 style= "color:#DDDDDD;font-size: 20px;text-align: center;" >Register Your Email address To Get Your Personal Invitation For The Next Video.</h2>
+			<div  style="top: 570px; left: 200px; position: absolute; z-index: 1; visibility: show;">
+			<b><a href="honest-optin.html" style = "color:#FFFFFF; text-align:center; font-size: 25px;">CLICK HERE to generate the next video link.</a><b>
 		</div>
 		
-		<div  style="top: 450px; left: 1040px; position: absolute; z-index: 1; visibility: show;">
-			<h2 style= "color:#DDDDDD;font-size: 10px;text-align: center;" >Your email address is completely secured</h2>
-		</div>
+
 		
 			<div  style="top:70px; left:100px; width: 700px; height: 480px; position: absolute; z-index: 1; visibility: show;">
 			 <iframe src="http://www.youtube.com/embed/wIAeIO1pqqk?rel=0&autoplay=1" allowfullscreen="" frameborder="0" height="100%" width="100%" data-src="//www.youtube.com/embed/wIAeIO1pqqk">
 			 </iframe>
 			 </div>
 			 
-<div class="container" id="wrap">
- <div class="row">
-        <div  style="top: 350px; left: 1000px; position: absolute; z-index: 1; visibility: show;">
-           
-            <form method="post" accept-charset="utf-8" class="form" role="form" id="form" target="_self" onsubmit="" action="https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse">   
-            
-                    
-                   <div class="row">
-                       
-                       
-                       <div class="col-md-40 col-md-40" style="top: 10px; left: 10px;">
-                           <input id="email" align ="center" type="text" name="email" value="" class="form-control input-lg" placeholder="Enter Your Email address"  />                        
-                       </div>
-                       
-                        
-                    </div>
-                   
-                   
-                   
-                    <!-- <input id="name" type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
-                   
-                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  /> -->
-                    <br />
-              
-            
-              <div class="col-md-40 col-md-40" style="top: 0px; left: 60px;">      
-            <button id="send" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">
-                        SEND ME MY PERSONAL LINK</button>
-						</div>
-						 
-						
-						
-            </form>          
-          </div>
-</div>            
-</div>	 
-<script type="text/javascript">
-	
-            function postToGoogle() {
-                var field1 = $('#email').val();
-                var field2 = "HONEST REVIEW- MARKETERS";
-				var x = field1
-				var atpos = x.indexOf("@");
-				var dotpos = x.lastIndexOf(".");
-				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-				alert("Not a valid e-mail address");
-				return false;
-				}
-				else{
- 
-                $.ajax({
-                    url: "https://docs.google.com/forms/d/1WcNAU6MacxLu6cZziIw4IW2HRufmR2BmbU6Qksuy5Rw/formResponse",
-                    data: { "entry.1955884104": field1,"entry.1976771985": field2,},
-                    type: "POST",
-                    dataType: "xml",
-                    statusCode: {
-                        0: function() {
-							location.href = "honest-error.html";
-                            //Success message
-                        },
-                        200: function() {
-						location.href = "honest-error.html" ;
-                            //Success Message
-                        }
-                    }
-                });
-            }
-             }
-            $(document).ready(function(){
-                $('#form').submit(function() {
-                    postToGoogle();
-                    return false;
-                });
-            });
-        </script> 
+
 </body>
